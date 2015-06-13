@@ -9,7 +9,7 @@ end
 
 def getit
   puts "Enter the content: "
-  ch=gets.chomp
+   ch=gets.chomp
   $con.query("insert into memo values('','#{date()}', '#{ch}')")
   puts "Saved"
 end
