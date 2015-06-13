@@ -2,7 +2,7 @@ require "mysql2"
 #STDOUT.sync = true
 
 $con = Mysql2::Client.new(:host =>"localhost", :username =>"root", :password =>"root", :database =>"MyDiary")
-
+ 
 def date
   Time.now.strftime("%d/%m/%Y %H:%M")
 end
